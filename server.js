@@ -1,7 +1,7 @@
 var restify = require('restify');
 
 var dummy, dummies;
-var iterator;
+var iterator, server;
 
 iterator = 1;
 
@@ -12,7 +12,7 @@ dummy = {
 
 dummies = []
 
-var server = restify.createServer();
+server = restify.createServer();
 
 server.use(restify.CORS());
 server.use(restify.fullResponse());
